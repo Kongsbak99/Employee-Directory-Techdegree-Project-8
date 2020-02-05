@@ -84,7 +84,6 @@ function openOverlay(employeeId,data){
   overlay.querySelector('.address').textContent = address;
   overlay.querySelector('.birthday span').textContent = birthday;
 
-  const idToNum = parseInt(employeeId,10);
 
   // Show the overlay & overlay-background layer behind it
   overlay.style.display = 'block';
