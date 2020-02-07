@@ -73,7 +73,7 @@ function openOverlay(employeeId,data){
   const email = employee.email;
   const city = employee.location.city;
   const phone = employee.phone;
-  const address = employee.location.street + ' ' + employee.location.state + ' ' + employee.location.postcode;
+  const address = employee.location.street.number + ' ' + employee.location.street.name + ' ' + employee.location.state + ' ' + employee.location.postcode;
   const birthday = getDate(employee.dob.date);
 
   overlay.querySelector('h3').textContent = name;
